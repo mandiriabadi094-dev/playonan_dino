@@ -1,0 +1,56 @@
+name: saga_playonan
+description: Saga Playonan - A 2D infinite side scroller.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+
+dependencies:
+  flame: 1.27.0
+  flame_audio: 2.11.3
+  hive: 2.2.3
+  path_provider: 2.1.5
+  provider: 6.1.4
+  flutter:
+    sdk: flutter
+  cupertino_icons: 1.0.8
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  device_preview: ^1.2.0
+  hive_generator: 2.0.1
+  build_runner: ^2.4.13
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/parallax/
+    - assets/images/AngryPig/
+    - assets/images/Bat/
+    - assets/images/Rino/
+    - assets/audio/
+
+  fonts:
+    - family: Audiowide
+      fonts:
+        - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "icon.png"
+  web:
+    generate: true
+    image_path: "icon.png"
+  windows:
+    generate: true
+    image_path: "icon.png"
+    icon_size: 256
