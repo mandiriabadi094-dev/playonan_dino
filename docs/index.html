@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Playonan Dino | Abadi Mandiri Internasional</title>
   <meta name="description" content="Kebijakan Privasi resmi untuk game Playonan Dino oleh Abadi Mandiri Internasional. Game untuk usia 13 tahun ke atas tanpa pengumpulan atau pembagian data pribadi." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Patrick+Hand&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
@@ -88,6 +90,30 @@
       text-align: center;
       margin-bottom: 32px;
       position: relative;
+    }
+
+    .app-icon-wrapper {
+      display: inline-block;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .doodle-app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      border: 3px solid var(--border-dark);
+      box-shadow: 4px 4px 0px var(--border-dark);
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      background: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .doodle-app-icon:hover {
+      transform: scale(1.06) rotate(-2deg);
+      box-shadow: 6px 6px 0px var(--border-dark);
     }
 
     .dino-badge {
@@ -360,9 +386,14 @@
 
       <!-- Header -->
       <header>
-        <div class="dino-badge">
-          <span>🦖</span>
-          <span>Playonan Dino</span>
+        <div class="app-icon-wrapper">
+          <img src="icon.png" alt="Playonan Dino App Icon" class="doodle-app-icon" />
+        </div>
+        <div>
+          <div class="dino-badge">
+            <span>🦖</span>
+            <span>Playonan Dino</span>
+          </div>
         </div>
         
         <div class="lang-id">
