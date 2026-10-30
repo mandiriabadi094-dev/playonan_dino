@@ -1,11 +1,11 @@
 {
-  "name": "Saga Playonan",
-  "short_name": "Saga Playonan",
+  "name": "Playonan Dino",
+  "short_name": "Playonan Dino",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0175C2",
   "theme_color": "#0175C2",
-  "description": "Saga Playonan - A 2D infinite side-scroller game by Zainudin Sardar.",
+  "description": "Playonan Dino - A 2D infinite side-scroller game by Abadi Mandiri Internasional.",
   "orientation": "portrait-primary",
   "prefer_related_applications": false,
   "icons": [

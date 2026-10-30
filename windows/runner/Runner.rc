@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "Zainudin Sardar" "\0"
-            VALUE "FileDescription", "Saga Playonan" "\0"
+            VALUE "CompanyName", "Abadi Mandiri Internasional" "\0"
+            VALUE "FileDescription", "Playonan Dino" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "saga_playonan" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 Zainudin Sardar. All rights reserved." "\0"
-            VALUE "OriginalFilename", "saga_playonan.exe" "\0"
-            VALUE "ProductName", "Saga Playonan" "\0"
+            VALUE "InternalName", "playonan_dino" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Abadi Mandiri Internasional. All rights reserved." "\0"
+            VALUE "OriginalFilename", "playonan_dino.exe" "\0"
+            VALUE "ProductName", "Playonan Dino" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

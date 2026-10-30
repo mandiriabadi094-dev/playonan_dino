@@ -1,6 +1,6 @@
-# 🎮 Saga Playonan
+# 🎮 Playonan Dino
 
-**Saga Playonan** is a 2D infinite side-scroller game built with [Flutter](https://flutter.dev/) and the [Flame Engine](https://flame-engine.org/). It features smooth controls, pixel graphics, and an addictive gameplay loop.
+**Playonan Dino** is a 2D infinite side-scroller game built with [Flutter](https://flutter.dev/) and the [Flame Engine](https://flame-engine.org/). It features smooth controls, pixel graphics, and an addictive gameplay loop.
 
 ---
 
@@ -39,11 +39,8 @@ flutter run
 
 ## ⚖️ License
 
-Copyright (c) 2026 Zainudin Sardar. All rights reserved.
+Copyright (c) 2026 Abadi Mandiri Internasional. All rights reserved.
 
 * Source code: MIT License – see [LICENSE](LICENSE)
-* Assets: Used with attribution. See:
-  * [assets/images/readme.md](assets/images/readme.md)
-  * [assets/audio/readme.md](assets/audio/readme.md)
 
 ---

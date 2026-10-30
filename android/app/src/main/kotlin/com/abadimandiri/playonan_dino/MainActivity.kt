@@ -1,4 +1,4 @@
-package com.zafirberkah.sagaplayonan
+package com.abadimandiri.playonan_dino
 
 import io.flutter.embedding.android.FlutterActivity
 

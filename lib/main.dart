@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'widgets/hud.dart';
@@ -23,29 +22,6 @@ Future<void> main() async {
 
   // Initializes hive and register the adapters.
   await initHive();
-  LicenseRegistry.addLicense(() async* {
-    final audiowide = await rootBundle.loadString(
-      'assets/fonts/Audiowide/OFL.txt',
-    );
-    final images = await rootBundle.loadString(
-      'assets/images/readme.md',
-    );
-    final audio = await rootBundle.loadString(
-      'assets/audio/readme.md',
-    );
-    yield LicenseEntryWithLineBreaks(
-      ['Fonts: Audiowide'],
-      audiowide,
-    );
-    yield LicenseEntryWithLineBreaks(
-      ['Game Assets (Images)'],
-      images,
-    );
-    yield LicenseEntryWithLineBreaks(
-      ['Game Assets (Audio)'],
-      audio,
-    );
-  });
   runApp(const SagaPlayonanApp());
 }
 
@@ -70,7 +46,7 @@ class SagaPlayonanApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Saga Playonan',
+      title: 'Playonan Dino',
       theme: ThemeData(
         fontFamily: 'Audiowide',
         primarySwatch: Colors.blue,

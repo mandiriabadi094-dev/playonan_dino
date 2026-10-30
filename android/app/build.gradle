@@ -29,7 +29,7 @@ if (keyPropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.zafirberkah.sagaplayonan"
+    namespace "com.abadimandiri.playonan_dino"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -56,7 +56,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.zafirberkah.sagaplayonan"
+        applicationId "com.abadimandiri.playonan_dino"
         minSdk flutter.minSdkVersion
         targetSdk flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

@@ -39,7 +39,7 @@ class MainMenu extends StatelessWidget {
                 spacing: 10,
                 children: [
                   const Text(
-                    'Saga Playonan',
+                    'Playonan Dino',
                     style: TextStyle(fontSize: 50, color: Colors.white),
                   ),
                   ElevatedButton(

@@ -81,13 +81,17 @@ class SettingsMenu extends StatelessWidget {
                         );
                       },
                     ),
-                    if (Theme.of(context).platform == TargetPlatform.android) ...[
+                    if (Theme.of(context).platform == TargetPlatform.android ||
+                        Theme.of(context).platform == TargetPlatform.iOS) ...[
                       const SizedBox(height: 12),
                       ElevatedButton(
                         onPressed: () {
-                          launchUrl(Uri.parse(
-                            'https://www.termsfeed.com/live/6a947679-8623-47ff-9f30-60dac8d0badc',
-                          ), mode: LaunchMode.externalApplication);
+                          launchUrl(
+                            Uri.parse(
+                              'https://mandiriabadi094-dev.github.io/playonan_dino/',
+                            ),
+                            mode: LaunchMode.externalApplication,
+                          );
                         },
                         child: const Text(
                           'Privacy Policy',
@@ -99,9 +103,9 @@ class SettingsMenu extends StatelessWidget {
                         onPressed: () {
                           showLicensePage(
                             context: context,
-                            applicationName: 'Saga Playonan',
+                            applicationName: 'Playonan Dino',
                             applicationLegalese:
-                                '© Zafir Berkah Indonesia',
+                                '© Abadi Mandiri Internasional',
                           );
                         },
                         child: const Text(

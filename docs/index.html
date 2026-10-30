@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Playonan Dino | Abadi Mandiri Internasional</title>
+  <meta name="description" content="Kebijakan Privasi resmi untuk game Playonan Dino oleh Abadi Mandiri Internasional. Game untuk usia 13 tahun ke atas tanpa pengumpulan atau pembagian data pribadi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Patrick+Hand&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-paper: #fbf7ee;
+      --ink: #20242c;
+      --ink-soft: #4a5568;
+      --doodle-blue: #3b82f6;
+      --doodle-yellow: #fef08a;
+      --doodle-yellow-dark: #fde047;
+      --doodle-green: #bbf7d0;
+      --doodle-green-dark: #86efac;
+      --doodle-pink: #fbcfe8;
+      --doodle-red: #fca5a5;
+      --border-dark: #23272f;
+      --shadow: 4px 4px 0px var(--border-dark);
+      --shadow-hover: 6px 6px 0px var(--border-dark);
+      --sketch-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      --sketch-radius-2: 20px 255px 20px 25px/255px 20px 225px 30px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      /* Subtle notebook graph grid pattern */
+      background-image: 
+        linear-gradient(rgba(43, 52, 69, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(43, 52, 69, 0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: var(--ink);
+      font-family: 'Patrick Hand', cursive, sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+      padding: 32px 16px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Paper Card Container */
+    .paper-sheet {
+      background: #ffffff;
+      border: 3px solid var(--border-dark);
+      border-radius: var(--sketch-radius);
+      box-shadow: 7px 7px 0px rgba(35, 39, 47, 0.95);
+      padding: 40px 36px;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    /* Tape on top */
+    .washi-tape {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-1.5deg);
+      background: rgba(254, 240, 138, 0.85);
+      border-left: 2px dashed rgba(35, 39, 47, 0.4);
+      border-right: 2px dashed rgba(35, 39, 47, 0.4);
+      padding: 4px 44px;
+      font-family: 'Gaegu', cursive;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: #64748b;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .dino-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--doodle-green);
+      border: 2px solid var(--border-dark);
+      border-radius: var(--sketch-radius-2);
+      padding: 6px 18px;
+      box-shadow: 3px 3px 0px var(--border-dark);
+      margin-bottom: 14px;
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-size: 42px;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 0px var(--doodle-yellow);
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: var(--ink-soft);
+      font-weight: 400;
+    }
+
+    .meta-tag {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 17px;
+      background: #f1f5f9;
+      border: 1.5px dashed var(--border-dark);
+      padding: 2px 14px;
+      border-radius: 12px;
+    }
+
+    /* Language Switcher */
+    .lang-switcher-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 32px 0;
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: #f8fafc;
+      border: 2.5px solid var(--border-dark);
+      border-radius: 30px;
+      padding: 4px;
+      box-shadow: var(--shadow);
+      gap: 6px;
+    }
+
+    .lang-btn {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-btn.active {
+      background: var(--border-dark);
+      color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .lang-btn:hover:not(.active) {
+      background: #e2e8f0;
+    }
+
+    /* Highlights / Callout Badges */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: 640px) {
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+      .paper-sheet {
+        padding: 28px 18px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .callout-card {
+      border: 2.5px solid var(--border-dark);
+      border-radius: var(--sketch-radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .callout-age {
+      background: var(--doodle-yellow);
+      transform: rotate(-0.5deg);
+    }
+
+    .callout-data {
+      background: var(--doodle-green);
+      transform: rotate(0.5deg);
+    }
+
+    .callout-icon {
+      font-size: 32px;
+      line-height: 1;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .callout-title {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+
+    .callout-desc {
+      font-size: 18px;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+
+    /* Doodle divider */
+    .doodle-divider {
+      text-align: center;
+      margin: 30px 0;
+      color: var(--border-dark);
+      font-size: 22px;
+      letter-spacing: 6px;
+      user-select: none;
+    }
+
+    /* Sections */
+    .section-block {
+      margin-bottom: 28px;
+      background: #fafaf9;
+      border: 2px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 22px 24px;
+      position: relative;
+    }
+
+    .section-title {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-size: 23px;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      border-bottom: 2px dashed rgba(35, 39, 47, 0.25);
+      padding-bottom: 8px;
+    }
+
+    .section-title svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #334155;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    .highlight-pill {
+      background: var(--doodle-yellow);
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-dark);
+      font-weight: bold;
+    }
+
+    .contact-box {
+      background: #eff6ff;
+      border: 2.5px solid var(--border-dark);
+      border-radius: var(--sketch-radius-2);
+      padding: 22px 24px;
+      box-shadow: var(--shadow);
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      color: #1d4ed8;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 22px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 18px;
+      color: var(--ink-soft);
+    }
+
+    .signature {
+      font-family: 'Gaegu', cursive;
+      font-size: 24px;
+      color: #475569;
+      margin-top: 6px;
+    }
+
+    /* Language display switching */
+    .lang-en {
+      display: none;
+    }
+
+    html[lang="en"] .lang-id {
+      display: none;
+    }
+
+    html[lang="en"] .lang-en {
+      display: block;
+    }
+
+    html[lang="id"] .lang-id {
+      display: block;
+    }
+
+    html[lang="id"] .lang-en {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="paper-sheet">
+      <div class="washi-tape">★ OFFICIAL POLICY ★</div>
+
+      <!-- Header -->
+      <header>
+        <div class="dino-badge">
+          <span>🦖</span>
+          <span>Playonan Dino</span>
+        </div>
+        
+        <div class="lang-id">
+          <h1>Kebijakan Privasi</h1>
+          <p class="subtitle">Transparan, Aman, dan Mengutamakan Privasi Anda</p>
+          <div class="meta-tag">Berlaku efektif sejak: 30 Oktober 2026</div>
+        </div>
+
+        <div class="lang-en">
+          <h1>Privacy Policy</h1>
+          <p class="subtitle">Transparent, Safe, and Respecting Your Privacy</p>
+          <div class="meta-tag">Effective Date: October 30, 2026</div>
+        </div>
+      </header>
+
+      <!-- Language Switcher Bar -->
+      <div class="lang-switcher-wrapper">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-id" onclick="setLanguage('id')">
+            <span>🇮🇩</span> Bahasa Indonesia
+          </button>
+          <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">
+            <span>🇬🇧</span> English
+          </button>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT CARDS (2 Main Core Tenets) -->
+      <div class="highlights-grid">
+        
+        <!-- CARD 1: 13+ Age Restriction -->
+        <div class="callout-card callout-age">
+          <div class="callout-icon">🔞 13+</div>
+          
+          <div class="lang-id">
+            <div class="callout-title">Khusus Usia 13 Tahun ke Atas</div>
+            <div class="callout-desc">
+              Game ini ditujukan secara ketat untuk pengguna <strong>berusia 13 tahun ke atas</strong>. Kami tidak mengizinkan atau menargetkan anak-anak di bawah 13 tahun.
+            </div>
+          </div>
+
+          <div class="lang-en">
+            <div class="callout-title">For Ages 13 and Above Only</div>
+            <div class="callout-desc">
+              This game is strictly designed for players <strong>aged 13 years and older</strong>. We do not knowingly target or collect data from children under 13.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Zero Data Sharing Guarantee -->
+        <div class="callout-card callout-data">
+          <div class="callout-icon">🛡️ 0% DATA</div>
+          
+          <div class="lang-id">
+            <div class="callout-title">Tidak Menyimpan / Membagikan Data</div>
+            <div class="callout-desc">
+              Kami <strong>TIDAK MENGUMPULKAN</strong>, <strong>TIDAK MENYIMPAN</strong> di server kami, dan <strong>TIDAK MEMBAGIKAN</strong> data pribadi Anda kepada pihak mana pun.
+            </div>
+          </div>
+
+          <div class="lang-en">
+            <div class="callout-title">No Data Storage or Sharing</div>
+            <div class="callout-desc">
+              We <strong>DO NOT COLLECT</strong>, <strong>DO NOT STORE</strong> on remote servers, and <strong>NEVER SHARE</strong> any of your personal data with third parties.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="doodle-divider">~ * ~ 🦖 ~ * ~</div>
+
+      <!-- ================= INDONESIAN CONTENT ================= -->
+      <div class="lang-id">
+        
+        <div class="section-block">
+          <div class="section-title">
+            <span>1. Pengenalan</span>
+          </div>
+          <p>
+            Selamat datang di <strong>Playonan Dino</strong>! Kebijakan Privasi ini disusun oleh <strong>Abadi Mandiri Internasional</strong> ("kami", "pengembang") untuk menjelaskan komitmen teguh kami terhadap perlindungan privasi para pengguna game kami.
+          </p>
+          <p>
+            Prinsip kami sederhana: <em>Anda bermain game untuk bersenang-senang, bukan untuk dilacak.</em>
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>2. Batasan Usia & Perlindungan Anak (13 Tahun ke Atas)</span>
+          </div>
+          <p>
+            <span class="highlight-pill">PENTING:</span> Game <strong>Playonan Dino</strong> hanya diperuntukkan bagi pengguna yang berusia <strong>13 tahun ke atas (13+)</strong>.
+          </p>
+          <ul>
+            <li>Kami tidak secara sengaja menawarkan layanan ini kepada anak-anak di bawah usia 13 tahun.</li>
+            <li>Kami tidak mengumpulkan nama, alamat, nomor telepon, atau data pengenal lainnya dari siapapun, termasuk anak-anak.</li>
+            <li>Jika Anda adalah orang tua atau wali dan meyakini anak Anda yang berusia di bawah 13 tahun menggunakan aplikasi ini secara keliru, Anda dapat merasa tenang karena aplikasi kami tidak menyimpan data pribadi apapun di server daring kami.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>3. Pengumpulan dan Pembagian Data: NOL (Zero)</span>
+          </div>
+          <p>
+            Kami menegaskan dengan sepenuh integritas:
+          </p>
+          <ul>
+            <li><strong>Tidak Ada Data Pribadi yang Dikumpulkan:</strong> Kami tidak meminta pembuatan akun, tidak ada login media sosial, tidak ada pelacakan GPS lokasi, dan tidak ada akses ke kontak atau galeri Anda.</li>
+            <li><strong>Tidak Ada Pembagian kepada Pihak Ketiga:</strong> Karena kami tidak mengumpulkan data pribadi Anda, maka <strong>tidak ada data yang kami jual, sewakan, berikan, atau bagikan</strong> kepada pihak ketiga, agen periklanan, atau pihak eksternal manapun.</li>
+            <li><strong>Bebas Pelacak Mengganggu:</strong> Game ini tidak menanam modul analitik pelacak perilaku pengguna yang invasif.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>4. Penyimpanan Lokal di Perangkat Pengguna</span>
+          </div>
+          <p>
+            Untuk memberikan pengalaman bermain yang baik, game ini hanya menyimpan informasi non-pribadi secara <strong>lokal di dalam memori perangkat Anda sendiri</strong> (offline storage), yaitu:
+          </p>
+          <ul>
+            <li><strong>Skor Tertinggi (High Score):</strong> Rekor nilai lompatan dino Anda agar Anda bisa melampaui rekor sebelumnya.</li>
+            <li><strong>Pengaturan Suara:</strong> Status on/off musik latar (BGM) dan efek suara (SFX) yang Anda pilih.</li>
+          </ul>
+          <p>
+            Data ini tersimpan hanya di memori ponsel Anda dan akan terhapus jika Anda menghapus data aplikasi atau meng-uninstall game.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>5. Izin Perangkat (App Permissions)</span>
+          </div>
+          <p>
+            Playonan Dino tidak meminta izin sensitif Android/iOS. Kami tidak meminta akses kamera, mikrofon, Bluetooth, penyimpanan eksternal, maupun lokasi Anda.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>6. Perubahan Kebijakan Privasi</span>
+          </div>
+          <p>
+            Kebijakan Privasi ini dapat diperbarui sewaktu-waktu jika terdapat pembaruan teknis atau kepatuhan regulasi. Setiap pembaruan akan selalu dipublikasikan secara terbuka pada halaman web ini.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3 style="font-family: 'Fredoka', cursive; font-size: 24px; margin-bottom: 8px;">📬 Kontak Pengembang</h3>
+          <p style="margin-bottom: 8px;">
+            Jika Anda memiliki pertanyaan terkait game atau Kebijakan Privasi ini, silakan hubungi kami di:
+          </p>
+          <p>
+            <strong>Abadi Mandiri Internasional</strong><br>
+            Email: <a href="mailto:mandiriabadi094@gmail.com">mandiriabadi094@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ================= ENGLISH CONTENT ================= -->
+      <div class="lang-en">
+        
+        <div class="section-block">
+          <div class="section-title">
+            <span>1. Introduction</span>
+          </div>
+          <p>
+            Welcome to <strong>Playonan Dino</strong>! This Privacy Policy is published by <strong>Abadi Mandiri Internasional</strong> ("we", "us", "our") to clearly explain our staunch commitment to safeguarding user privacy.
+          </p>
+          <p>
+            Our core philosophy: <em>You play games to have fun, not to be tracked.</em>
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>2. Age Limitation & Children's Privacy (13+ Years Old)</span>
+          </div>
+          <p>
+            <span class="highlight-pill">IMPORTANT NOTICE:</span> <strong>Playonan Dino</strong> is designed and strictly intended for users <strong>aged 13 and above (13+)</strong>.
+          </p>
+          <ul>
+            <li>We do not knowingly market or direct this application to children under the age of 13.</li>
+            <li>We do not collect names, addresses, phone numbers, or any personally identifiable information from anyone, including children.</li>
+            <li>If you are a parent or guardian and believe a child under 13 has downloaded or played this game, rest assured that our app does not transmit or store any personal data on remote servers.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>3. Data Collection and Sharing: ZERO</span>
+          </div>
+          <p>
+            We declare with complete integrity:
+          </p>
+          <ul>
+            <li><strong>Zero Personal Data Collected:</strong> We do not require registration, accounts, social logins, precise GPS tracking, or access to your contacts or media.</li>
+            <li><strong>Zero Data Shared with Third Parties:</strong> Because we do not collect your personal information, <strong>we NEVER sell, rent, disclose, or share</strong> user data with any third parties, advertisers, or analytics brokers.</li>
+            <li><strong>No Invasive Trackers:</strong> The game does not embed invasive background tracking SDKs.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>4. Local Device Storage</span>
+          </div>
+          <p>
+            To provide a seamless arcade experience, the game saves minimal non-personal game states <strong>exclusively on your local device storage</strong>:
+          </p>
+          <ul>
+            <li><strong>High Scores:</strong> Your best dino score so you can challenge your own records offline.</li>
+            <li><strong>Audio Preferences:</strong> Your preferred toggle status for background music (BGM) and sound effects (SFX).</li>
+          </ul>
+          <p>
+            This data never leaves your device and is wiped if you clear the app's cache or uninstall the application.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>5. Device Permissions</span>
+          </div>
+          <p>
+            Playonan Dino does not request sensitive Android/iOS runtime permissions. We do not access your camera, microphone, Bluetooth, files, or precise physical location.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <span>6. Policy Updates</span>
+          </div>
+          <p>
+            We may occasionally update this Privacy Policy to reflect technical or legal improvements. Any changes will always be published transparently on this GitHub Pages site.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3 style="font-family: 'Fredoka', cursive; font-size: 24px; margin-bottom: 8px;">📬 Developer Contact</h3>
+          <p style="margin-bottom: 8px;">
+            If you have questions or inquiries regarding Playonan Dino or this Privacy Policy, please reach out to:
+          </p>
+          <p>
+            <strong>Abadi Mandiri Internasional</strong><br>
+            Email: <a href="mailto:mandiriabadi094@gmail.com">mandiriabadi094@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 <strong>Abadi Mandiri Internasional</strong>. All rights reserved.</p>
+      <div class="signature">~ Playonan Dino • Pure Fun, Zero Tracking ~</div>
+    </footer>
+
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      
+      const btnId = document.getElementById('btn-id');
+      const btnEn = document.getElementById('btn-en');
+      
+      if (lang === 'en') {
+        btnEn.classList.add('active');
+        btnId.classList.remove('active');
+        document.title = "Privacy Policy - Playonan Dino | Abadi Mandiri Internasional";
+      } else {
+        btnId.classList.add('active');
+        btnEn.classList.remove('active');
+        document.title = "Kebijakan Privasi - Playonan Dino | Abadi Mandiri Internasional";
+      }
+
+      try {
+        localStorage.setItem('playonan_policy_lang', lang);
+      } catch(e) {}
+    }
+
+    // Auto-detect browser language or read stored preference
+    (function initLanguage() {
+      try {
+        const saved = localStorage.getItem('playonan_policy_lang');
+        if (saved && (saved === 'id' || saved === 'en')) {
+          setLanguage(saved);
+          return;
+        }
+      } catch(e) {}
+      
+      const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      if (navLang.startsWith('id')) {
+        setLanguage('id');
+      } else {
+        // default to Indonesian first as requested, or toggle as needed
+        setLanguage('id');
+      }
+    })();
+  </script>
+</body>
+</html>
