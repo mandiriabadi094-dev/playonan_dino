@@ -56,3 +56,4 @@ yarn-error.log*
 # macOS
 # =========================
 .DS_Store
+play_console_assets/*.aab
