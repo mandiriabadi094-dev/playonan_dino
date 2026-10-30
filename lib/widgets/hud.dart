@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/game/audio_manager.dart';
 import '/models/player_data.dart';
 import '/widgets/pause_menu.dart';
@@ -14,7 +14,7 @@ class Hud extends StatelessWidget {
   static const id = 'Hud';
 
   // Reference to parent game.
-  final SagaPlayonan game;
+  final PlayonanDino game;
 
   const Hud(this.game, {super.key});
 

@@ -18,7 +18,7 @@ To run the project locally:
 
 ```bash
 # 1. Navigate into the project folder
-cd saga_playonan
+cd playonandino
 
 # 2. Install dependencies
 flutter pub get

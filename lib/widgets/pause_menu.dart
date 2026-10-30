@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '/widgets/hud.dart';
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/widgets/main_menu.dart';
 import '/game/audio_manager.dart';
 import '/models/player_data.dart';
@@ -15,7 +15,7 @@ class PauseMenu extends StatelessWidget {
   static const id = 'PauseMenu';
 
   // Reference to parent game.
-  final SagaPlayonan game;
+  final PlayonanDino game;
 
   const PauseMenu(this.game, {super.key});
 

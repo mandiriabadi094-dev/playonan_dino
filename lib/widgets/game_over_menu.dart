@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '/widgets/hud.dart';
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/widgets/main_menu.dart';
 import '/models/player_data.dart';
 import '/game/audio_manager.dart';
@@ -16,7 +16,7 @@ class GameOverMenu extends StatelessWidget {
   static const id = 'GameOverMenu';
 
   // Reference to parent game.
-  final SagaPlayonan game;
+  final PlayonanDino game;
 
   const GameOverMenu(this.game, {super.key});
 

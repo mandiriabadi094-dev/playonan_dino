@@ -4,7 +4,7 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 
 import '/game/enemy.dart';
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/game/audio_manager.dart';
 import '/models/player_data.dart';
 
@@ -13,7 +13,7 @@ enum DinoAnimationStates { idle, run, kick, hit, sprint }
 
 // This represents the dino character of this game.
 class Dino extends SpriteAnimationGroupComponent<DinoAnimationStates>
-    with CollisionCallbacks, HasGameReference<SagaPlayonan> {
+    with CollisionCallbacks, HasGameReference<PlayonanDino> {
   // A map of all the animation states and their corresponding animations.
   static final _animationMap = {
     DinoAnimationStates.idle: SpriteAnimationData.sequenced(

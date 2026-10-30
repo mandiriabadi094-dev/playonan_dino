@@ -1,12 +1,12 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/models/enemy_data.dart';
 
 // This represents an enemy in the game world.
 class Enemy extends SpriteAnimationComponent
-    with CollisionCallbacks, HasGameReference<SagaPlayonan> {
+    with CollisionCallbacks, HasGameReference<PlayonanDino> {
   // The data required for creation of this enemy.
   final EnemyData enemyData;
 

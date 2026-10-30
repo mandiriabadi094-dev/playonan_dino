@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/models/settings.dart';
 import '/widgets/main_menu.dart';
 import '/game/audio_manager.dart';
@@ -15,7 +15,7 @@ class SettingsMenu extends StatelessWidget {
   static const id = 'SettingsMenu';
 
   // Reference to parent game.
-  final SagaPlayonan game;
+  final PlayonanDino game;
 
   const SettingsMenu(this.game, {super.key});
 

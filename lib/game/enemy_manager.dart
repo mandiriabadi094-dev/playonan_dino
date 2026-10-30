@@ -3,12 +3,12 @@ import 'dart:math';
 import 'package:flame/components.dart';
 
 import '/game/enemy.dart';
-import '/game/saga_playonan.dart';
+import '/game/playonan_dino.dart';
 import '/models/enemy_data.dart';
 
 // This class is responsible for spawning random enemies at certain
 // interval of time depending upon players current score.
-class EnemyManager extends Component with HasGameReference<SagaPlayonan> {
+class EnemyManager extends Component with HasGameReference<PlayonanDino> {
   // A list to hold data for all the enemies.
   final List<EnemyData> _data = [];
 

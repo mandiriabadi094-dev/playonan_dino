@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(saga_playonan LANGUAGES CXX)
+project(playonan_dino LANGUAGES CXX)
 
-set(BINARY_NAME "saga_playonan")
+set(BINARY_NAME "playonan_dino")
 
 cmake_policy(SET CMP0063 NEW)
 

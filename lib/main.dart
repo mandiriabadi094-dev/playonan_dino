@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'widgets/hud.dart';
-import 'game/saga_playonan.dart';
+import 'game/playonan_dino.dart';
 import 'models/settings.dart';
 import 'widgets/main_menu.dart';
 import 'models/player_data.dart';
@@ -22,7 +22,7 @@ Future<void> main() async {
 
   // Initializes hive and register the adapters.
   await initHive();
-  runApp(const SagaPlayonanApp());
+  runApp(const PlayonanDinoApp());
 }
 
 // This function will initilize hive with apps documents directory.
@@ -39,8 +39,8 @@ Future<void> initHive() async {
 }
 
 // The main widget for this game.
-class SagaPlayonanApp extends StatelessWidget {
-  const SagaPlayonanApp({super.key});
+class PlayonanDinoApp extends StatelessWidget {
+  const PlayonanDinoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -60,8 +60,8 @@ class SagaPlayonanApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: GameWidget<SagaPlayonan>.controlled(
-          // This will dislpay a loading bar until [SagaPlayonan] completes
+        body: GameWidget<PlayonanDino>.controlled(
+          // This will dislpay a loading bar until [PlayonanDino] completes
           // its onLoad method.
           loadingBuilder: (conetxt) => const Center(
             child: SizedBox(width: 200, child: LinearProgressIndicator()),
@@ -76,7 +76,7 @@ class SagaPlayonanApp extends StatelessWidget {
           },
           // By default MainMenu overlay will be active.
           initialActiveOverlays: const [MainMenu.id],
-          gameFactory: () => SagaPlayonan(
+          gameFactory: () => PlayonanDino(
             // Use a fixed resolution camera to avoid manually
             // scaling and handling different screen sizes.
             camera: CameraComponent.withFixedResolution(

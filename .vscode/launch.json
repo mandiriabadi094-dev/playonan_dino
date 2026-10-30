@@ -5,18 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "saga_playonan",
+      "name": "playonan_dino",
       "request": "launch",
       "type": "dart",
     },
     {
-      "name": "saga_playonan (profile mode)",
+      "name": "playonan_dino (profile mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
     },
     {
-      "name": "saga_playonan (release mode)",
+      "name": "playonan_dino (release mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",

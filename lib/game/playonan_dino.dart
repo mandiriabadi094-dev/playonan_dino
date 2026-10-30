@@ -17,8 +17,8 @@ import '/widgets/pause_menu.dart';
 import '/widgets/game_over_menu.dart';
 
 // This is the main flame game class.
-class SagaPlayonan extends FlameGame with TapDetector, HasCollisionDetection {
-  SagaPlayonan({super.camera});
+class PlayonanDino extends FlameGame with TapDetector, HasCollisionDetection {
+  PlayonanDino({super.camera});
 
   // List of all the image assets.
   static const _imageAssets = [
@@ -144,33 +144,33 @@ class SagaPlayonan extends FlameGame with TapDetector, HasCollisionDetection {
   /// This method reads [PlayerData] from the hive box.
   Future<PlayerData> _readPlayerData() async {
     final playerDataBox = await Hive.openBox<PlayerData>(
-      'SagaPlayonan.PlayerDataBox',
+      'PlayonanDino.PlayerDataBox',
     );
-    final playerData = playerDataBox.get('SagaPlayonan.PlayerData');
+    final playerData = playerDataBox.get('PlayonanDino.PlayerData');
 
     // If data is null, this is probably a fresh launch of the game.
     if (playerData == null) {
       // In such cases store default values in hive.
-      await playerDataBox.put('SagaPlayonan.PlayerData', PlayerData());
+      await playerDataBox.put('PlayonanDino.PlayerData', PlayerData());
     }
 
     // Now it is safe to return the stored value.
-    return playerDataBox.get('SagaPlayonan.PlayerData')!;
+    return playerDataBox.get('PlayonanDino.PlayerData')!;
   }
 
   /// This method reads [Settings] from the hive box.
   Future<Settings> _readSettings() async {
-    final settingsBox = await Hive.openBox<Settings>('SagaPlayonan.SettingsBox');
-    final settings = settingsBox.get('SagaPlayonan.Settings');
+    final settingsBox = await Hive.openBox<Settings>('PlayonanDino.SettingsBox');
+    final settings = settingsBox.get('PlayonanDino.Settings');
 
     // If data is null, this is probably a fresh launch of the game.
     if (settings == null) {
       // In such cases store default values in hive.
-      await settingsBox.put('SagaPlayonan.Settings', Settings(bgm: true, sfx: true));
+      await settingsBox.put('PlayonanDino.Settings', Settings(bgm: true, sfx: true));
     }
 
     // Now it is safe to return the stored value.
-    return settingsBox.get('SagaPlayonan.Settings')!;
+    return settingsBox.get('PlayonanDino.Settings')!;
   }
 
   @override
